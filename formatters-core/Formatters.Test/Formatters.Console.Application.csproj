@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net5.0</TargetFramework>
+        <Authors>Wiregrass Code Technology</Authors>
+        <Company>Wiregrass Code Technology</Company>
+        <Product>Formatters</Product>
+        <Copyright>Copyright © 2021 Wiregrass Code Technology</Copyright>
+        <Description>Formatters library console application with the following supported formats: date and number</Description>
+        <AssemblyName>Formatters.Console.Application</AssemblyName>
+        <RootNamespace>Formatters.Console.Application</RootNamespace>
+        <PackageId>Formatters.Console.Application</PackageId>
+        <SignAssembly>false</SignAssembly>
+        <AssemblyOriginatorKeyFile>NameKey.snk</AssemblyOriginatorKeyFile>
+        <EnableNETAnalyzers>true</EnableNETAnalyzers>
+        <Version>1.0.0.0</Version>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="5.0.3">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Formatters\Formatters.csproj" />
+    </ItemGroup>
+
+</Project>
