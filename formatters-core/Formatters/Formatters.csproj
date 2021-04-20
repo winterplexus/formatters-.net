@@ -10,10 +10,10 @@
         <AssemblyName>Formatters</AssemblyName>
         <RootNamespace>Formatters</RootNamespace>
         <PackageId>Formatters</PackageId>
-        <SignAssembly>false</SignAssembly>
+        <SignAssembly>true</SignAssembly>
         <AssemblyOriginatorKeyFile>NameKey.snk</AssemblyOriginatorKeyFile>
         <EnableNETAnalyzers>true</EnableNETAnalyzers>
-        <Version>1.0.0.0</Version>
+        <Version>1.1.0.0</Version>
     </PropertyGroup>
 
     <ItemGroup>

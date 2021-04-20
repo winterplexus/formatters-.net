@@ -7,14 +7,14 @@
         <Company>Wiregrass Code Technology</Company>
         <Product>Formatters</Product>
         <Copyright>Copyright © 2021 Wiregrass Code Technology</Copyright>
-        <Description>Formatters library console application with the following supported formats: date and number</Description>
-        <AssemblyName>Formatters.Console.Application</AssemblyName>
-        <RootNamespace>Formatters.Console.Application</RootNamespace>
-        <PackageId>Formatters.Console.Application</PackageId>
+        <Description>Formatters library console test application with the following supported formats: date and number</Description>
+        <AssemblyName>Formatters.Test</AssemblyName>
+        <RootNamespace>Formatters.Test</RootNamespace>
+        <PackageId>Formatters.Test</PackageId>
         <SignAssembly>false</SignAssembly>
         <AssemblyOriginatorKeyFile>NameKey.snk</AssemblyOriginatorKeyFile>
         <EnableNETAnalyzers>true</EnableNETAnalyzers>
-        <Version>1.0.0.0</Version>
+        <Version>1.1.0.0</Version>
     </PropertyGroup>
 
     <ItemGroup>

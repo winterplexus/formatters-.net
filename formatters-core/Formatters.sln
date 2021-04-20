@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Formatters", "Formatters\Formatters.csproj", "{9F3552DA-3751-4F36-993C-0DAA496F82E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Formatters", "Formatters\Formatters.csproj", "{9F3552DA-3751-4F36-993C-0DAA496F82E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Formatters.Console.Application", "Formatters.Test\Formatters.Console.Application.csproj", "{B698E991-79FC-45E1-9402-5C3BA0D67F04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Formatters.Test", "Formatters.Test\Formatters.Test.csproj", "{B698E991-79FC-45E1-9402-5C3BA0D67F04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

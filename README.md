@@ -1,7 +1,7 @@
 Formatters Library for .NET Core
 ================================
 
-Formatters library based on .NET Core platform and contains interfaces, classes for formatting objects into use case strings.
+Formatters library based on .NET Core and .NET Framework platform and contains interfaces, classes for formatting objects into use case strings.
 
 * IDateTimeFormats interface:
 
