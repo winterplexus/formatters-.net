@@ -1,5 +1,5 @@
-Formatters Library for .NET Core
-================================
+Formatters Library for .NET
+===========================
 
 Formatters library based on .NET Core and .NET Framework platform and contains interfaces, classes for formatting objects into use case strings.
 
