@@ -1,7 +1,7 @@
 ﻿//
 //  ICharacterIterator.cs
 //
-//  Wiregrass Code Technology 2021
+//  Wiregrass Code Technology 2021-2022
 //
 namespace Formatters
 {
@@ -10,11 +10,11 @@ namespace Formatters
         char First();
         char Last();
         char Current();
-        char Next();
-        char Previous();
+        char Forward();
+        char Back();
         char AtEnd();
-        int GetBeginIndex();
-        int GetEndIndex();
-        int GetIndex();
+        int  GetBeginIndex();
+        int  GetEndIndex();
+        int  GetIndex();
     }
 }

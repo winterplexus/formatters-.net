@@ -1,7 +1,7 @@
-Formatters Library for .NET Core
-================================
+Formatters Library for .NET
+===========================
 
-Formatters library based on .NET Core and .NET Framework platform and contains interfaces, classes for formatting objects into use case strings.
+Formatters library based on .NET 6 and .NET Framework platform and contains interfaces, classes for formatting objects into use case strings.
 
 * IDateTimeFormats interface:
 
@@ -47,3 +47,5 @@ Specification | Description
         public string GetOrdinal(int number);
         public string GetLiteralAmount(double amount);
     }
+
+The library is separated into two VisualStudio solutions: one for .NET 6 platform and one for .NET Framework platform.

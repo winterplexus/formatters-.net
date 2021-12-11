@@ -1,7 +1,7 @@
 ﻿//
 //  INumberFormats.cs
 //
-//  Wiregrass Code Technology 2021
+//  Wiregrass Code Technology 2021-2022
 //
 namespace Formatters
 {

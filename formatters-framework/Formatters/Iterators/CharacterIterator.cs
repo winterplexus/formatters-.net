@@ -1,7 +1,7 @@
 ﻿//
 //  CharacterIterator.cs
 //
-//  Wiregrass Code Technology 2021
+//  Wiregrass Code Technology 2021-2022
 //
 using System;
 
@@ -58,7 +58,7 @@ namespace Formatters
             return eol;
         }
 
-        public char Next()
+        public char Forward()
         {
             if (index < endIndex - 1)
             {
@@ -70,7 +70,7 @@ namespace Formatters
             return eol;
         }
 
-        public char Previous()
+        public char Back()
         {
             if (index > beginIndex)
             {

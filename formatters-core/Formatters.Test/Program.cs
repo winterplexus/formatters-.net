@@ -1,10 +1,11 @@
 ﻿//
 //  Program.cs
 //
-//  Wiregrass Code Technology 2021
+//  Wiregrass Code Technology 2021-2022
 //
 using System;
 
+[assembly: CLSCompliant(true)]
 namespace Formatters.Test
 {
     internal class Program

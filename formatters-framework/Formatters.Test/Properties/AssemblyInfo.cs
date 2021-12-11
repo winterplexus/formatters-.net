@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Wiregrass Code Technology")]
 [assembly: AssemblyProduct("Formatters.Test")]
-[assembly: AssemblyCopyright("Copyright © 2021 Wiregrass Code Technology")]
+[assembly: AssemblyCopyright("Copyright © 2021-2022 Wiregrass Code Technology")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -1,10 +1,11 @@
 ﻿//
 //  Program.cs
 //
-//  Wiregrass Code Technology 2021
+//  Wiregrass Code Technology 2021-2022
 //
 using System;
 
+[assembly: CLSCompliant(true)]
 namespace Formatters.Test
 {
     internal class Program
@@ -100,14 +101,14 @@ namespace Formatters.Test
 
             INumberFormats numberFormats = new NumberFormats();
 
-            Console.WriteLine("  1{0}", numberFormats.GetOrdinal(1));
-            Console.WriteLine("  2{0}", numberFormats.GetOrdinal(2));
-            Console.WriteLine("  3{0}", numberFormats.GetOrdinal(3));
-            Console.WriteLine("  4{0}", numberFormats.GetOrdinal(4));
-            Console.WriteLine("  5{0}", numberFormats.GetOrdinal(5));
-            Console.WriteLine("  6{0}", numberFormats.GetOrdinal(6));
-            Console.WriteLine("  7{0}", numberFormats.GetOrdinal(7));
-            Console.WriteLine("  8{0}", numberFormats.GetOrdinal(8));
+            Console.WriteLine("  1{0}",  numberFormats.GetOrdinal(1));
+            Console.WriteLine("  2{0}",  numberFormats.GetOrdinal(2));
+            Console.WriteLine("  3{0}",  numberFormats.GetOrdinal(3));
+            Console.WriteLine("  4{0}",  numberFormats.GetOrdinal(4));
+            Console.WriteLine("  5{0}",  numberFormats.GetOrdinal(5));
+            Console.WriteLine("  6{0}",  numberFormats.GetOrdinal(6));
+            Console.WriteLine("  7{0}",  numberFormats.GetOrdinal(7));
+            Console.WriteLine("  8{0}",  numberFormats.GetOrdinal(8));
             Console.WriteLine("  9{0}", numberFormats.GetOrdinal(9));
             Console.WriteLine("  10{0}", numberFormats.GetOrdinal(10));
             Console.WriteLine("  11{0}", numberFormats.GetOrdinal(11));

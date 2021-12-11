@@ -1,12 +1,13 @@
 ﻿//
 //  DateTimeFormats.cs
 //
-//  Wiregrass Code Technology 2021
+//  Wiregrass Code Technology 2021-2022
 //
 using System;
 using System.Globalization;
 using System.Text;
 
+[assembly: CLSCompliant(true)]
 namespace Formatters
 {
     public class DateTimeFormats : IDateTimeFormats
@@ -117,7 +118,8 @@ namespace Formatters
             {
                 return specificationIterator.First();
             }
-            return specificationIndex > specificationIterator.GetEndIndex() ? specificationIterator.AtEnd() : specificationIterator.Next();
+
+            return specificationIndex > specificationIterator.GetEndIndex() ? specificationIterator.AtEnd() : specificationIterator.Forward();
         }
 
         private static StringBuilder FormatDateUsingSpecificationValue(char value, DateTime dt, StringBuilder buffer)
