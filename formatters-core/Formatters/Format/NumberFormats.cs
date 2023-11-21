@@ -1,9 +1,9 @@
 ﻿//
 //  NumberFormats.cs
 //
-//  Wiregrass Code Technology 2021-2022
+//  Code Construct System 2021-2024
 //
-using System;
+using System.Globalization;
 using System.Text;
 
 namespace Formatters
@@ -17,7 +17,8 @@ namespace Formatters
 
         private static readonly string[] unitsTable =
         {
-            "Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten","Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"
+            "Zero", "One",    "Two",    "Three",    "Four",     "Five",    "Six",     "Seven",     "Eight",    "Nine",
+            "Ten",  "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"
         };
 
         private static readonly string[] tensTable =
@@ -83,7 +84,7 @@ namespace Formatters
                 buffer.Append(unitsTable[0] + " ");
             }
 
-            var fractional = (int)GetDecimalPart(amount) * 100 + 0.5;
+            var fractional = GetDecimalPart(amount);
 
             buffer.Append("and " + fractional + "/100");
 
@@ -122,9 +123,13 @@ namespace Formatters
             return buffer.ToString();
         }
 
-        private static double GetDecimalPart(double decimalNumber)
+        private static String GetDecimalPart(double amount)
         {
-            return decimalNumber - Math.Truncate(decimalNumber);
+            var decimalPart = (decimal)(amount - Math.Truncate(amount));
+            var decimalPartRounded = Decimal.Round(decimalPart, 2);
+            var decimalPartInteger = (int)(decimalPartRounded * 100);
+
+            return decimalPartInteger.ToString(CultureInfo.InvariantCulture);
         }
     }
 }

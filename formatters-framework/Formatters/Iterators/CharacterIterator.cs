@@ -1,13 +1,13 @@
 ﻿//
 //  CharacterIterator.cs
 //
-//  Wiregrass Code Technology 2021-2022
+//  Code Construct System 2021-2024
 //
 using System;
 
 namespace Formatters
 {
-    public class CharacterIterator : ICharacterIterator
+    internal class CharacterIterator : ICharacterIterator
     {
         private const char eol = '\uFFFF';
         private readonly string text;

@@ -1,15 +1,13 @@
 ﻿//
 //  CharacterIterator.cs
 //
-//  Wiregrass Code Technology 2021-2022
+//  Code Construct System 2021-2024
 //
-using System;
-
 namespace Formatters
 {
-    public class CharacterIterator : ICharacterIterator
+    internal sealed class CharacterIterator : ICharacterIterator
     {
-        private const char eol = '\uFFFF';
+        private const char endOfLine = '\uffff';
         private readonly string text;
         private readonly int beginIndex;
         private readonly int endIndex;
@@ -23,9 +21,9 @@ namespace Formatters
             }
 
             text = value;
-            index = 0;
             beginIndex = 0;
             endIndex = text.Length;
+            index = 0;
         }
 
         public char First()
@@ -44,7 +42,6 @@ namespace Formatters
             {
                 index = endIndex;
             }
-
             return Current();
         }
 
@@ -54,8 +51,7 @@ namespace Formatters
             {
                 return text[index];
             }
-
-            return eol;
+            return endOfLine;
         }
 
         public char Forward()
@@ -65,9 +61,8 @@ namespace Formatters
                 index++;
                 return text[index];
             }
-
             index = endIndex;
-            return eol;
+            return endOfLine;
         }
 
         public char Back()
@@ -77,13 +72,17 @@ namespace Formatters
                 index--;
                 return text[index];
             }
-
-            return eol;
+            return endOfLine;
         }
 
         public char AtEnd()
         {
-            return eol;
+            return endOfLine;
+        }
+
+        public int GetIndex()
+        {
+            return index;
         }
 
         public int GetBeginIndex()
@@ -94,11 +93,6 @@ namespace Formatters
         public int GetEndIndex()
         {
             return endIndex;
-        }
-
-        public int GetIndex()
-        {
-            return index;
         }
     }
 }

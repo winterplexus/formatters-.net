@@ -1,13 +1,11 @@
 ﻿//
 //  DateTimeFormats.cs
 //
-//  Wiregrass Code Technology 2021-2022
+//  Code Construct System 2021-2024
 //
-using System;
 using System.Globalization;
 using System.Text;
 
-[assembly: CLSCompliant(true)]
 namespace Formatters
 {
     public class DateTimeFormats: IDateTimeFormats
@@ -29,10 +27,10 @@ namespace Formatters
 
         private static readonly string[] shortMonthsTable =
         {
-            "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct","Nov", "Dec"
+            "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
         };
 
-        private CharacterIterator specificationIterator;
+        private CharacterIterator specificationIterator = null!;
         private int specificationIndex;
 
         public string Format(string dateTimeSpecification)
@@ -118,7 +116,6 @@ namespace Formatters
             {
                 return specificationIterator.First();
             }
-
             return specificationIndex > specificationIterator.GetEndIndex() ? specificationIterator.AtEnd() : specificationIterator.Forward();
         }
 

@@ -1,11 +1,11 @@
 ﻿//
 //  ICharacterIterator.cs
 //
-//  Wiregrass Code Technology 2021-2022
+//  Code Construct System 2021-2024
 //
 namespace Formatters
 {
-    public interface ICharacterIterator
+    internal interface ICharacterIterator
     {
         public char First();
         public char Last();
@@ -13,8 +13,8 @@ namespace Formatters
         public char Forward();
         public char Back();
         public char AtEnd();
+        public int  GetIndex();
         public int  GetBeginIndex();
         public int  GetEndIndex();
-        public int  GetIndex();
     }
 }

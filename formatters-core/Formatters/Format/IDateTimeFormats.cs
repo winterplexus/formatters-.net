@@ -1,10 +1,8 @@
 ﻿//
 //  IDateTimeFormats.cs
 //
-//  Wiregrass Code Technology 2021-2022
+//  Code Construct System 2021-2024
 //
-using System;
-
 namespace Formatters
 {
     public interface IDateTimeFormats

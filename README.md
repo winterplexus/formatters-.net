@@ -1,7 +1,17 @@
 Formatters Library for .NET
 ===========================
 
-Formatters library based on .NET 6 and .NET Framework platform and contains interfaces, classes for formatting objects into use case strings.
+Formatters library based on .NET 8 LTS and .NET Framework 4.8 platform and contains interfaces, classes for formatting objects into use case strings.
+
+* IBooleanFormats interface:
+
+```
+    public interface IBooleanFormats
+    {
+        public string GetLiteral(bool condition);
+        public char GetLiteralLetter(bool condition);
+    }
+```
 
 * IDateTimeFormats interface:
 
@@ -47,5 +57,7 @@ Specification | Description
         public string GetOrdinal(int number);
         public string GetLiteralAmount(double amount);
     }
+```
 
-The library is separated into two VisualStudio solutions: one for .NET 6 platform and one for .NET Framework platform.
+The library is separated into two VisualStudio solutions: one for .NET 8 LTS platform and one for .NET Framework 4.8 platform.
+
